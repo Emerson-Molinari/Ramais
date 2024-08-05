@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|c:\\users\\zata30\\documents\\github\\ramais\\ramais\\ramais\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|c:\\users\\zata30\\documents\\github\\ramais\\ramais\\ramais\\configurar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|solutionrelative:configurar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|c:\\users\\zata30\\documents\\github\\ramais\\ramais\\ramais\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|c:\\users\\zata30\\documents\\github\\ramais\\ramais\\ramais\\scripts\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|solutionrelative:scripts\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|c:\\users\\zata30\\documents\\github\\ramais\\ramais\\ramais\\scripts\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|solutionrelative:scripts\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|c:\\users\\zata30\\documents\\github\\ramais\\ramais\\ramais\\scripts\\group_add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|solutionrelative:scripts\\group_add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|c:\\users\\zata30\\documents\\github\\ramais\\ramais\\ramais\\scripts\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|solutionrelative:scripts\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|c:\\users\\zata30\\documents\\github\\ramais\\ramais\\ramais\\scripts\\connect.cfg||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|solutionrelative:scripts\\connect.cfg||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\configurar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|solutionrelative:configurar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\f_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|solutionrelative:f_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A06763BE-80B4-49E2-8ACA-6A1730FA93E4}|Ramais.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +46,120 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAiwBUAAAAAAAAA",
+              "Title": "Group.cs",
+              "DocumentMoniker": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\scripts\\Group.cs",
+              "RelativeDocumentMoniker": "scripts\\Group.cs",
+              "ToolTip": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\scripts\\Group.cs",
+              "RelativeToolTip": "scripts\\Group.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T17:43:38.174Z",
+              "WhenOpened": "2024-08-05T18:26:28.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "group_add.cs",
+              "DocumentMoniker": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\scripts\\group_add.cs",
+              "RelativeDocumentMoniker": "scripts\\group_add.cs",
+              "ToolTip": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\scripts\\group_add.cs",
+              "RelativeToolTip": "scripts\\group_add.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T18:25:04.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "dbConnection.cs",
+              "DocumentMoniker": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\scripts\\dbConnection.cs",
+              "RelativeDocumentMoniker": "scripts\\dbConnection.cs",
+              "ToolTip": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\scripts\\dbConnection.cs",
+              "RelativeToolTip": "scripts\\dbConnection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T18:20:45.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\scripts\\Connection.cs",
+              "RelativeDocumentMoniker": "scripts\\Connection.cs",
+              "ToolTip": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\scripts\\Connection.cs",
+              "RelativeToolTip": "scripts\\Connection.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAFYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T16:48:03.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "connect.cfg",
+              "DocumentMoniker": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\scripts\\connect.cfg",
+              "RelativeDocumentMoniker": "scripts\\connect.cfg",
+              "ToolTip": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\scripts\\connect.cfg",
+              "RelativeToolTip": "scripts\\connect.cfg",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-05T16:48:01.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\Form1.cs [Projeto]",
-              "RelativeToolTip": "Form1.cs [Projeto]",
+              "Title": "Configurar.cs",
+              "DocumentMoniker": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\Configurar.cs",
+              "RelativeDocumentMoniker": "Configurar.cs",
+              "ToolTip": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\Configurar.cs",
+              "RelativeToolTip": "Configurar.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T17:17:48.091Z",
+              "WhenOpened": "2024-08-05T16:44:48.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "login.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\login.cs",
+              "RelativeDocumentMoniker": "login.cs",
+              "ToolTip": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\login.cs [Projeto]",
+              "RelativeToolTip": "login.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T15:28:13.843Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "F_principal.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\F_principal.cs",
+              "RelativeDocumentMoniker": "F_principal.cs",
+              "ToolTip": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\F_principal.cs [Projeto]",
+              "RelativeToolTip": "F_principal.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T14:09:59.076Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Configurar.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\Configurar.cs",
+              "RelativeDocumentMoniker": "Configurar.cs",
+              "ToolTip": "C:\\Users\\Zata30\\Documents\\GitHub\\Ramais\\Ramais\\Ramais\\Configurar.cs [Projeto]",
+              "RelativeToolTip": "Configurar.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T19:40:04.29Z",
               "EditorCaption": " [Projeto]"
             }
           ]
