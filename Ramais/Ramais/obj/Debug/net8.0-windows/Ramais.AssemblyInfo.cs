@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ramais")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d7c3d46f44fa6847a969f380952d6dc37a6f7a9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0328253f66f24311bc01c77ca260198008d232b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ramais")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ramais")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

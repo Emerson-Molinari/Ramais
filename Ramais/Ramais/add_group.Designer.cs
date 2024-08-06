@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(add_group));
             splitContainer1 = new SplitContainer();
             label1 = new Label();
             tb_groupName = new TextBox();
@@ -119,6 +120,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(339, 141);
             Controls.Add(splitContainer1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "add_group";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Criar Grupo";

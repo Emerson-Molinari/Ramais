@@ -37,3 +37,7 @@ C:\Users\Zata30\Documents\GitHub\Ramais\Ramais\Ramais\obj\Debug\net8.0-windows\R
 C:\Users\Zata30\Documents\GitHub\Ramais\Ramais\Ramais\obj\Debug\net8.0-windows\Ramais.add_group.resources
 C:\Users\Zata30\Documents\GitHub\Ramais\Ramais\Ramais\obj\Debug\net8.0-windows\Ramais.F_principal.resources
 C:\Users\Zata30\Documents\GitHub\Ramais\Ramais\Ramais\obj\Debug\net8.0-windows\Ramais.login.resources
+C:\Users\Zata30\Documents\GitHub\Ramais\Ramais\Ramais\bin\Debug\net8.0-windows\Dapper.dll
+C:\Users\Zata30\Documents\GitHub\Ramais\Ramais\Ramais\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Zata30\Documents\GitHub\Ramais\Ramais\Ramais\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Zata30\Documents\GitHub\Ramais\Ramais\Ramais\bin\Debug\net8.0-windows\Npgsql.dll

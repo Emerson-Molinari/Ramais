@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,19 +22,5 @@ namespace Ramais.scripts
 
             return result == 1;
         }
-
-        public List<Group> Get()
-        {
-            using var conn = new dbConnection();
-
-            string query = "select name,id from groups";
-
-            var groups = conn.Connection.Query<Group>(sql: query);
-
-            return groups.ToList();
-
-        }
-
-
     }
 }

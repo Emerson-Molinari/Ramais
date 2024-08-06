@@ -2,85 +2,97 @@ using Ramais.scripts;
 using System.Data.SQLite;
 using System.Data;
 using System.ComponentModel.Design.Serialization;
+using System.Windows.Forms;
+using System.ComponentModel;
 
 namespace Ramais
 {
     public partial class ramais : Form
     {
-        public static int selectedGroup = 0;
+        public static int selectedGroup = 999;
         public static int selectedUser = 0;
 
         public ramais()
         {
             InitializeComponent();
+            LoadUsers();
+            LoadGroups();
         }
-
-        public void GetGroups()
-        {
-            var repository = new Group();
-
-        }
-
-
-
-
-
-
 
         private void btn_reload_Click(object sender, EventArgs e)
         {
-            reloadGroups();
-            reloadUsers();
+            LoadUsers();
+            LoadGroups();
         }
 
         private void ramais_Load(object sender, EventArgs e)
         {
-            Connection.dataGrouplist();
-            reloadGroups();
-            reloadUsers();
+            LoadUsers();
+            LoadGroups();
         }
 
-        private void reloadGroups()
+        #region Load Grids
+
+        void LoadUsers()
         {
-            Connection.dataGrouplist();
-            dataGridView1.DataSource = Connection.dt_group;
-            dataGridView1.Columns[0].Width = 250;
-            dataGridView1.Columns[1].Visible = false;
-
-            Connection.dataUserlist(selectedGroup);
-            dgv_userlist.DataSource = Connection.dt_Users;
-        }
-
-        private void reloadUsers()
-        {
-            Connection.dataUserlist(selectedGroup);
-            dgv_userlist.DataSource = Connection.dt_Users;
-            dgv_userlist.Columns[0].Width = 200;
-            dgv_userlist.Columns[1].Width = 50;
-            dgv_userlist.Columns[2].Visible = false;
-        }
-
-        private void add_user_Click(object sender, EventArgs e)
-        {
-
-            if (selectedGroup != 0)
+            if (selectedGroup == 999)
             {
-                add_user addu = new add_user();
-                addu.ShowDialog();
+                Connection.Get("select name,ramal,id from r_user");
+                dgv_userlist.DataSource = Connection.getList;
+                dgv_userlist.Columns[0].Width = 200;
+                dgv_userlist.Columns[1].Width = 50;
+                dgv_userlist.Columns[2].Visible = false;
+                dgv_userlist.Sort(dgv_userlist.Columns[0], ListSortDirection.Ascending);
+
+                return;
+            }
+
+
+            dgv_userlist.DataSource = Connection.Get("select name,ramal,id from r_user where u_group = " + selectedGroup);
+
+
+            if (dgv_userlist.Rows.Count == 0)
+            {
+                return;
             }
             else
             {
-                MessageBox.Show("Deve Selecionar um Grupo");
+                dgv_userlist.Columns[0].Width = 200;
+                dgv_userlist.Columns[1].Width = 50;
+                dgv_userlist.Columns[2].Visible = false;
+                dgv_userlist.Sort(dgv_userlist.Columns[0], ListSortDirection.Ascending);
             }
         }
+
+        void LoadGroups()
+        {
+            dgv_groups.DataSource = Connection.Get("SELECT name,id from r_group");
+
+            if (dgv_groups.Rows.Count == 0)
+            {
+                return;
+            }
+            else
+            {
+                dgv_groups.Columns[0].Width = 250;
+                dgv_groups.Columns[1].Visible = false;
+            }
+        }
+
+        #endregion
+
+
+        #region Grid Index
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int index = e.RowIndex;
-            DataGridViewRow selectedRow = dataGridView1.Rows[index];
+            DataGridViewRow selectedRow = dgv_groups.Rows[index];
 
             selectedGroup = int.Parse(selectedRow.Cells[1].Value.ToString());
-            reloadUsers();
+
+
+            LoadUsers();
         }
 
         private void dgv_userlist_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -91,13 +103,23 @@ namespace Ramais
             selectedUser = int.Parse(selectedRow.Cells[2].Value.ToString());
         }
 
-        private void delete_user_Click(object sender, EventArgs e)
+        #endregion
+
+
+        #region Open outhers forms
+
+        private void add_user_Click(object sender, EventArgs e)
         {
-            DialogResult res = MessageBox.Show("Deseja mesmo DELETAR o ramal?", "Deletar", MessageBoxButtons.YesNo);
-            if (res == DialogResult.Yes)
+
+            if (selectedGroup != 0)
             {
-                Connection.deleteUser(selectedUser);
-                reloadUsers();
+                add_user addu = new add_user();
+                addu.ShowDialog();
+
+            }
+            else
+            {
+                MessageBox.Show("Deve Selecionar um Grupo");
             }
         }
 
@@ -105,6 +127,18 @@ namespace Ramais
         {
             add_group addg = new add_group();
             addg.ShowDialog();
+            LoadGroups();
+        }
+
+        private void delete_user_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Deseja mesmo DELETAR o ramal?", "Deletar", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+                var sql = "DELETE FROM r_user WHERE id =" + selectedUser;
+                Connection.Delete(sql);
+                LoadUsers();
+            }
         }
 
         private void remove_group_Click(object sender, EventArgs e)
@@ -112,9 +146,18 @@ namespace Ramais
             DialogResult res = MessageBox.Show("Deseja mesmo DELETAR o grupo", "Deletar", MessageBoxButtons.YesNo);
             if (res == DialogResult.Yes)
             {
-                Connection.deleteGroup(selectedGroup);
-                reloadGroups();
+                if(selectedGroup == 999)
+                {
+                    MessageBox.Show("Este grupo Não pode ser Excluido");
+                    return;
+                }
+
+                var sql = "DELETE FROM r_group WHERE id =" + selectedGroup;
+                Connection.Delete(sql);
+                LoadGroups();
             }
         }
+
+        #endregion
     }
 }

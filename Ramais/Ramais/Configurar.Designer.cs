@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ramais));
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             splitContainer1 = new SplitContainer();
             tableLayoutPanel1 = new TableLayoutPanel();
             btn_reload = new Button();
@@ -38,7 +38,7 @@
             delete_user = new Button();
             add_user = new Button();
             tableLayoutPanel2 = new TableLayoutPanel();
-            dataGridView1 = new DataGridView();
+            dgv_groups = new DataGridView();
             label1 = new Label();
             dgv_userlist = new DataGridView();
             label2 = new Label();
@@ -48,7 +48,7 @@
             splitContainer1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgv_groups).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgv_userlist).BeginInit();
             SuspendLayout();
             // 
@@ -164,7 +164,7 @@
             // 
             tableLayoutPanel2.ColumnCount = 1;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.Controls.Add(dataGridView1, 0, 3);
+            tableLayoutPanel2.Controls.Add(dgv_groups, 0, 3);
             tableLayoutPanel2.Controls.Add(label1, 0, 0);
             tableLayoutPanel2.Controls.Add(dgv_userlist, 0, 1);
             tableLayoutPanel2.Controls.Add(label2, 0, 2);
@@ -180,25 +180,25 @@
             tableLayoutPanel2.Size = new Size(277, 539);
             tableLayoutPanel2.TabIndex = 0;
             // 
-            // dataGridView1
+            // dgv_groups
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.AllowUserToResizeColumns = false;
-            dataGridView1.AllowUserToResizeRows = false;
-            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.ColumnHeadersVisible = false;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.EnableHeadersVisualStyles = false;
-            dataGridView1.Location = new Point(3, 374);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridView1.RowHeadersVisible = false;
-            dataGridView1.Size = new Size(271, 162);
-            dataGridView1.TabIndex = 6;
-            dataGridView1.CellClick += dataGridView1_CellClick;
+            dgv_groups.AllowUserToAddRows = false;
+            dgv_groups.AllowUserToDeleteRows = false;
+            dgv_groups.AllowUserToResizeColumns = false;
+            dgv_groups.AllowUserToResizeRows = false;
+            dgv_groups.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgv_groups.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv_groups.ColumnHeadersVisible = false;
+            dgv_groups.Dock = DockStyle.Fill;
+            dgv_groups.EnableHeadersVisualStyles = false;
+            dgv_groups.Location = new Point(3, 374);
+            dgv_groups.Name = "dgv_groups";
+            dgv_groups.ReadOnly = true;
+            dgv_groups.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dgv_groups.RowHeadersVisible = false;
+            dgv_groups.Size = new Size(271, 162);
+            dgv_groups.TabIndex = 6;
+            dgv_groups.CellClick += dataGridView1_CellClick;
             // 
             // label1
             // 
@@ -225,8 +225,8 @@
             dgv_userlist.ReadOnly = true;
             dgv_userlist.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             dgv_userlist.RowHeadersVisible = false;
-            dataGridViewCellStyle2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dgv_userlist.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dgv_userlist.RowsDefaultCellStyle = dataGridViewCellStyle1;
             dgv_userlist.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgv_userlist.Size = new Size(271, 321);
             dgv_userlist.TabIndex = 5;
@@ -249,6 +249,7 @@
             ClientSize = new Size(442, 539);
             Controls.Add(splitContainer1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "ramais";
             StartPosition = FormStartPosition.CenterScreen;
@@ -261,7 +262,7 @@
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgv_groups).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgv_userlist).EndInit();
             ResumeLayout(false);
         }
@@ -278,7 +279,7 @@
         private Label label1;
         private DataGridView dgv_userlist;
         private Button btn_reload;
-        public DataGridView dataGridView1;
+        public DataGridView dgv_groups;
         private Label label2;
     }
 }

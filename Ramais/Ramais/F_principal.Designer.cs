@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_principal));
             tableLayoutPanel1 = new TableLayoutPanel();
             dgv_users = new DataGridView();
             dgv_groups = new DataGridView();
@@ -194,6 +195,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(310, 626);
             Controls.Add(tableLayoutPanel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "F_principal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ramais [M.S.]";

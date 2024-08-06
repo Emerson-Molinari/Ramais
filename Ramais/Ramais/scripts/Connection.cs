@@ -6,11 +6,91 @@ using System.Threading.Tasks;
 using System.Data.SQLite;
 using System.Data;
 using Microsoft.VisualBasic.ApplicationServices;
+using Npgsql;
+using System.Windows.Forms;
+using Dapper;
 
 namespace Ramais.scripts
 {
     internal class Connection
     {
+        private static NpgsqlConnection Conn;
+
+        private static NpgsqlConnection ConnBase()
+        {
+            Conn = new NpgsqlConnection("Server=192.168.2.200;Port=5432;Database=Ramais;User Id=postgres;Password=1234;");
+            Conn.Open();
+
+            return Conn;
+        }
+
+        public static DataTable getList;
+        public static NpgsqlDataReader GetDr;
+
+        public static DataTable Get(string sql)
+        {
+            DataTable dt = new DataTable();
+
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.Connection = ConnBase();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = sql;
+            NpgsqlDataReader dr = cmd.ExecuteReader();
+            GetDr = dr;
+
+            if (dr.HasRows)
+            {
+                dt.Load(dr);
+                getList = dt;
+            }
+
+            Conn.Dispose();
+            Conn.Close();
+
+            return dt;
+        }
+
+        public static void Set(string sql)
+        {
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.Connection = ConnBase();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = sql;
+
+            ConnBase().Execute(sql);
+
+            Conn.Dispose();
+            Conn.Close();
+        }
+
+        public static void Delete(string sql)
+        {
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.Connection = ConnBase();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = sql;
+
+            ConnBase().Execute(sql);
+
+            Conn.Dispose();
+            Conn.Close();
+        }
+
+        public static void Query(string sql)
+        {
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.Connection = ConnBase();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = sql;
+
+            ConnBase().Execute(sql);
+
+            Conn.Dispose();
+            Conn.Close();
+        }
+
+
+        /*
 
         private static SQLiteConnection connect;
 
@@ -177,10 +257,8 @@ namespace Ramais.scripts
 
             cmd.ExecuteNonQuery();
         }
+        */
+    }
+        
 
     }
-
-}
-
-
-//select name,ramal from users where "group" =

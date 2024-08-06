@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             splitContainer1 = new SplitContainer();
             Senha = new Label();
             tb_pass = new TextBox();
@@ -121,6 +122,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(249, 156);
             Controls.Add(splitContainer1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "login";

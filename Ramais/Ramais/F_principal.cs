@@ -1,4 +1,5 @@
-﻿using Ramais.scripts;
+﻿using Npgsql;
+using Ramais.scripts;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,34 +14,58 @@ namespace Ramais
 {
     public partial class F_principal : Form
     {
-        public static int selectedGroup = 1;
+        public static int selectedGroup = 999;
 
         public F_principal()
         {
             InitializeComponent();
-            Connection.dataGrouplist();
             reloadUsers();
             reloadGroups();
         }
 
         private void reloadGroups()
         {
-            Connection.dataGrouplist();
-            dgv_groups.DataSource = Connection.dt_group;
-            dgv_groups.Columns[0].Width = 280;
-            dgv_groups.Columns[1].Visible = false;
+            Connection.Get("select name,id from r_group");
+            dgv_groups.DataSource = Connection.getList;
 
-            Connection.dataUserlist(selectedGroup);
-            dgv_users.DataSource = Connection.dt_Users;
+            if (dgv_groups.Rows.Count == 0)
+            {
+                return;
+            }
+            else
+            {
+                dgv_groups.Columns[0].Width = 280;
+                dgv_groups.Columns[1].Visible = false;
+            }
         }
 
-        private void reloadUsers()
+        public void reloadUsers()
         {
-            Connection.dataUserlist(selectedGroup);
-            dgv_users.DataSource = Connection.dt_Users;
+            if (selectedGroup == 999)
+            {
+                Connection.Get("select name,ramal,id from r_user");
+
+                dgv_users.DataSource = Connection.getList;
+                dgv_users.Columns[0].Width = 200;
+                dgv_users.Columns[1].Width = 80;
+                dgv_users.Columns[2].Visible = false;
+                dgv_users.Sort(dgv_users.Columns[0], ListSortDirection.Ascending);
+
+            }
+
+            Connection.Get("select name,ramal,id from r_user where u_group  =" + selectedGroup);
+            dgv_users.DataSource = Connection.getList;
+            
+            if(dgv_groups.Rows.Count == 0)
+            {
+                return;
+            }
+            else
+            {
             dgv_users.Columns[0].Width = 200;
             dgv_users.Columns[1].Width = 80;
             dgv_users.Columns[2].Visible = false;
+            }
         }
 
         private void dgv_groups_CellClick(object sender, DataGridViewCellEventArgs e)

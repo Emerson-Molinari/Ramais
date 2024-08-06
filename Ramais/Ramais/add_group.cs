@@ -1,4 +1,5 @@
-﻿using Ramais.scripts;
+﻿using Npgsql;
+using Ramais.scripts;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Ramais
 {
@@ -20,10 +22,17 @@ namespace Ramais
 
         private void button1_Click(object sender, EventArgs e)
         {
-            group_add g = new group_add();
-            g.groupName = tb_groupName.Text;
-
-            Connection.setGroup(g);
+            try
+            {
+                Connection.Set("INSERT INTO r_group (name) values ('" + tb_groupName.Text + "')");
+                MessageBox.Show("Criado com sucesso!");
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("erro ao criar o grupo!" + ex);
+            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

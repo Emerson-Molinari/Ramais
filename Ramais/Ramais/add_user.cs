@@ -34,12 +34,24 @@ namespace Ramais
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ramais r = new ramais();
-            User_add user = new User_add();
-            user.Name = tb_name.Text;
-            user.ramal = tb_ramal.Text;
+            try
+            {
+                if(tb_group.Text == "999")
+                {
+                    MessageBox.Show("Este Não é um grupo válido, Favor selecionar outro");
+                    Close();
+                    return;
+                }
+                Connection.Set("INSERT INTO r_user (name,ramal,u_group) values ('" + tb_name.Text + "','" + tb_ramal.Text + "','" + tb_group.Text + "')");
+                MessageBox.Show("Usuário Definido");
+                Close();
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show("Erro ao definir o Usuário!" + ex);
+            }
 
-            Connection.setUser(user,ramais.selectedGroup);
+
         }
     }
 }
